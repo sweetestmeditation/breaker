@@ -1,2 +1,2 @@
 # breaker
-A Reddit, but for truckers against trafficking
+A reddit clone, but for truckers against trafficking
