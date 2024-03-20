@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Icons } from './Icons'
+import { buttonVariants } from './ui/Button'
 
 const Navbar = async () => {
   return (
@@ -10,6 +11,8 @@ const Navbar = async () => {
           <Icons.logo className='h-8 w-8 sm:h-6 sm:w-6' />
           <p className='hidden text-zinc-700 text-sm font-medium md:block'>Breaker!</p>
         </Link>
+        {/* search bar */}
+        <Link href='/sign-in' className={buttonVariants()}>Sign In</Link>
       </div>
     </div>
   )
