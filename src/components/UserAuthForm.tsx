@@ -17,12 +17,10 @@ const UserAuthForm: FC<UserAuthFormProps> = ({ className, ...props }) => {
     const loginWithGoogle = async () => {
         setIsLoading(true)
         console.log('about to sign-in')
-        debugger
         try {
             await signIn('google')
         } catch (error) {
             console.log('My error', error)
-            debugger
             // toast notification
             toast({
                 title: 'There was a problem.',
